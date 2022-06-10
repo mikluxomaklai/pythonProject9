@@ -55,7 +55,7 @@ def page_create_posts():
 
     #проверяем валидность файла
 
-    if not is_file_type_valid:
+    if not is_file_type_valid(file_type):
         raise PictureFormatNotSupportedError(f"Формат {file_type} не поддерживается")
 
     # получаем свободное имя
